@@ -18,7 +18,19 @@ function App() {
   return (
     <div className='w-full h-screen text-white px-8'>
       <nav className='w-full p-3 flex justify-between items-center'>
-        <h1 className='font-bold tracking-wide text-3xl'>Weather App</h1>
+        <h1 class="font-bold tracking-wide text-3xl">
+          <span class="text-red-500">W</span>
+          <span class="text-orange-500">e</span>
+          <span class="text-yellow-500">a</span>
+          <span class="text-green-500">t</span>
+          <span class="text-blue-500">h</span>
+          <span class="text-indigo-500">e</span>
+          <span class="text-purple-500">r</span>
+          <span class="text-pink-500"> </span>
+          <span class="text-red-500">A</span>
+          <span class="text-orange-500">p</span>
+          <span class="text-yellow-500">p</span>
+        </h1>
         <div className='bg-transparent w-[15rem] overflow-hidden shadow-2xl rounded-full flex items-center p-2 gap-2'>
           <div className='relative flex items-center'>
             <img src={search} alt='Search' className='absolute left-3 h-[1.5rem] w-[1.5rem] pointer-events-none' />

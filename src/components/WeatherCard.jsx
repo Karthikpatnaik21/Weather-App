@@ -45,14 +45,14 @@ const WeatherCard = ({
     <div className='w-[22rem] min-w-[22rem] h-[30rem] glassCard p-4'>
       <div className='flex w-full justify-center items-center gap-4 mt-12 mb-4'>
         <img src={icon} alt='Weather icon' />
-        <div className='font-bold text-5xl flex justify-center items-center'>{temperature} &deg;C</div>
+        <div className='font-bold text-5xl flex justify-center items-center text-black'>{temperature} &deg;C</div>
       </div>
-      <div className='font-bold text-center text-xl'>
+      <div className='font-bold text-center text-xl text-black'>
         {place}
       </div>
       <div className='w-full flex justify-between items-center mt-4'>
-        <div className='flex-1 text-center p-2'>{new Date().toDateString()}</div>
-        <div className='flex-1 text-center p-2'>{time}</div>
+        <div className='flex-1 text-center p-2 text-black'>{new Date().toDateString()}</div>
+        <div className='flex-1 text-center p-2 text-black'>{time}</div>
       </div>
       <div className='w-full flex justify-between items-center mt-4 gap-4'>
         <div className='flex-1 text-center p-2 font-bold bg-blue-600 shadow round-lg'>
@@ -65,11 +65,11 @@ const WeatherCard = ({
         </div>
       </div>
       <div className='w-full p-3 mt-4 flex justify-between items-center'>
-        <div className='font-semibold text-lg'>Heat Index</div>
-        <div className='text-lg'>{heatIndex ? heatIndex : 'N/A'}</div>
+        <div className='font-semibold text-lg text-black'>Heat Index</div>
+        <div className='text-lg text-black'>{heatIndex ? heatIndex : 'N/A'}</div>
       </div>
-      <hr className='bg-slate-600' />
-      <div className='w-full p-4 flex justify-center items-center text-3xl font-semibold'>
+      <hr className='bg-zinc-950 border-0 h-0.5' />
+      <div className='w-full p-4 flex justify-center items-center text-3xl font-semibold text-black'>
         {conditions}
       </div>
     </div>

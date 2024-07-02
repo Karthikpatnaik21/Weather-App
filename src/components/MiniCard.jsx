@@ -36,12 +36,12 @@ const MiniCard = ({ time, temp, iconString }) => {
 
   return (
     <div className='glassCard w-[10rem] h-[10rem] p-4 flex flex-col'>
-      <p className='text-center'>{formattedDate}</p>
-      <hr />
+      <p className='text-center text-black'>{formattedDate}</p>
+      <hr className='bg-zinc-950 border-0 h-0.5'/>
       <div className='w-full flex justify-center items-center flex-1'>
         <img src={icon} alt='Weather' className='w-[4rem] h-[4rem]' />
       </div>
-      <p className='text-center font-bold'>{temp}&deg;C</p>
+      <p className='text-center font-bold text-black'>{temp}&deg;C</p>
     </div>
   );
 };
