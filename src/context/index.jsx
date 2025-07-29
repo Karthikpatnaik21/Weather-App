@@ -13,7 +13,7 @@ export const StateContextProvider = ({ children }) => {
 
   const fetchWeather = async () => {
     try {
-      const geoResponse = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=1&appid=${API_KEY}`);
+      const geoResponse = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${place}&limit=1&appid=${API_KEY}`);
 
       if (geoResponse.data.length > 0) {
         const { lat, lon, name, country } = geoResponse.data[0];
