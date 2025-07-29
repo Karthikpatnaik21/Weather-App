@@ -9,7 +9,7 @@ export const StateContextProvider = ({ children }) => {
   const [place, setPlace] = useState('Visakhapatnam');
   const [thisLocation, setLocation] = useState('');
 
-  const API_KEY = import.meta.env.VITE_OPEN_WEATHER_API;
+  const API_KEY = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 
   const fetchWeather = async () => {
     try {
